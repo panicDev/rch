@@ -10,7 +10,7 @@ apply plugin: 'maven-publish'
 final group = "com.github.panicDev"
 final artifact = "rch"
 final versionCode = 1
-final versionName = "1.0"
+final versionName = "1.0.0"
 
 android {
     defaultConfig {
@@ -33,16 +33,6 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = group
                 artifactId = artifact
-                version = versionName
-            }
-
-            // Creates a Maven publication called “debug”.
-            debug(MavenPublication) {
-                // Applies the component for the debug build variant.
-                from components.debug
-
-                groupId = group + ".debug"
-                artifactId = artifact + "-debug"
                 version = versionName
             }
         }
