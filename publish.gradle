@@ -9,8 +9,8 @@ apply plugin: 'maven-publish'
 // Replace with <your_github_username>
 final group = "com.github.panicDev"
 final artifact = "rch"
-final versionCode = 1
-final versionName = "1.0.0"
+final versionCode = 101
+final versionName = "1.0.1"
 
 android {
     defaultConfig {
